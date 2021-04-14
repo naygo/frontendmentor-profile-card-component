@@ -26,14 +26,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
     height: 100vh;
 
     background:
         url('./images/bg-pattern-top.svg') no-repeat, 
         url('./images/bg-pattern-bottom.svg') no-repeat var(--dark-cyan);
-
-    
 
     background-position: -65% 200%, 160% -200%;
 }
@@ -108,6 +107,11 @@ body {
     margin-top: 0.5rem;
 }
 
+.attribution {
+    position: fixed;
+    bottom: 0;
+}
+
 @media(max-width: 375px) {
     body {
         background:
@@ -117,3 +121,4 @@ body {
         background-position: 120% 210%, -20% -100%;
     }
 }
+
